@@ -52,7 +52,7 @@ function App() {
                   value={url}
                   onChange={(e) => setUrl(e.target.value)}
                   placeholder="https://example.com?param1=value1&param2=value2"
-                  className="block w-full pr-10 border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 sm:text-sm min-h-[80px] resize-y"
+                  className="block w-full pr-10 border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 sm:text-sm min-h-[80px] resize-y p-3"
                   style={{ lineHeight: '1.5' }}
                 />
                 <div className="absolute top-3 right-0 pr-3">
@@ -76,8 +76,8 @@ function App() {
               <div className="bg-gray-50 rounded-lg overflow-hidden">
                 <div className="divide-y divide-gray-200">
                   {Object.entries(params).map(([key, value]) => (
-                    <div key={key} className="px-4 py-3 flex flex-col sm:flex-row">
-                      <dt className="text-sm font-medium text-gray-500 break-all sm:w-1/3">{key}</dt>
+                    <div key={key} className="px-6 py-4 flex flex-col sm:flex-row">
+                      <dt className="text-sm font-medium text-gray-500 break-all sm:w-1/3 sm:pr-8">{key}</dt>
                       <dd className="mt-1 text-sm text-gray-900 break-all sm:mt-0 sm:w-2/3">{value}</dd>
                     </div>
                   ))}
